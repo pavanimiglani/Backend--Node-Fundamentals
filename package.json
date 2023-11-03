@@ -1,12 +1,5 @@
 {
-  "name": "my-node-module",
-  "version": "18.18.0",
-  "description": "My Node.js Custom Module",
-  "main": "app.js",  
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Pavani",
-  "license": "ISC"
-} 
-
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
