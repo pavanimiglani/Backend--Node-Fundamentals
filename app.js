@@ -1,8 +1,15 @@
+// app.js
+const express = require('express');
+const accountsModule = require('./accountsModule');
 
-const math = require('./math');
-const myEmitter = require('./emitter'); // Assuming your custom event emitter module is named 'emitter.js'
+const app = express();
+const port = 3001;
 
-const result = math.square(5);
-console.log(`Square of 5 is: ${result}`);
-myEmitter.emit('customEvent');
+app.get('/account/addresses', (req, res) => {
+  const addresses = accountsModule.getAddresses();
+  res.json({ addresses });
+});
 
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});

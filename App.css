@@ -1,0 +1,21 @@
+/* App.css */
+.app-container {
+  text-align: center;
+  margin: 50px;
+}
+
+.app-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.address-list {
+  list-style: none;
+  padding: 0;
+}
+
+.address-list li {
+  margin: 5px;
+  font-size: 16px;
+}
